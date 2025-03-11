@@ -18,5 +18,3 @@ jobs:
       - uses: ./action/
         with:
           suite: "keepsandbox, deliverability"
-
-
