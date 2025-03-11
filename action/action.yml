@@ -1,0 +1,12 @@
+name: DevOps Actions
+description: UI Automation for DevOps
+author: Argenis Ruben Dominguez
+
+inputs:
+  suite:
+    required: true
+    desription: What suite do you want to run ?
+
+runs:
+  using: node20
+  main: dist/index.js

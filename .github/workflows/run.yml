@@ -1,0 +1,22 @@
+name: DevOps
+
+on:
+  push:
+
+jobs:
+  ui:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./action/
+        with:
+          suite: updateimage
+
+      - run: echo "Some other steps here..."
+
+      - uses: ./action/
+        with:
+          suite: "keepsandbox, deliverability"
+
+
